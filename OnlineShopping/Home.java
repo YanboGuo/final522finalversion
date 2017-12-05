@@ -1,26 +1,22 @@
 package ShoppingSystem;
-import java.util.*;
+import java.util.ArrayList;
 
 public class Home {
-	public ArrayList<products> productlist;
-	private Scanner scanhome = new Scanner(System.in);
-	public account Account = null;
-
-	public Home() {
-		productlist = new ArrayList<products>();
-
-	}
-
-	// page to add product to shopping cart.
-
-	public void setaccount(account Acc) {
-		this.Account = Acc;
-	}
-
-	// The list for Home page.
+	  
+	public ArrayList<Product> productlist = new ArrayList<Product>();
+	Product p1 = new Product("apple" , 3.0);
+	Product p2 = new Product("banana" ,2.0);
+	Product p3 = new Product("pear" ,2.0);
+	Product p4 = new Product("peach",1.0);
 	
-	// method to add products into our system.
-	public void addproduct(products newProd) {
-		this.productlist.add(newProd);
+	public Home(){	
+	      this.productlist.add(p1);
+	      this.productlist.add(p2);
+	      this.productlist.add(p3);
+	      this.productlist.add(p4);
 	}
+	
+	
+	
 }
+
